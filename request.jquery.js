@@ -107,7 +107,7 @@ function request(options, callback) {
                      , 'url'        : options.uri
                      , 'data'       : (options.body || undefined)
                      , 'timeout'    : (options.timeout || request.DEFAULT_TIMEOUT)
-                     , 'dataType'   : 'text'
+                     , 'dataType'   : (options.dataType || 'text')
                      , 'processData': false
                      , 'beforeSend' : beforeSend
                      , 'success'    : onSuccess
